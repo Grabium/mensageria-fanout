@@ -22,6 +22,6 @@ class UserJob implements ShouldQueue
      */
     public function handle(): void
     {
-        echo 'Registrador vai '.$this->data['action'] . ' usuário ' . $this->data['name'] . '.'. PHP_EOL;
+        echo PHP_EOL.'===='.PHP_EOL.PHP_EOL.'Registrador vai '.$this->data['action'] . ' usuário ' . $this->data['name'] . '.'.PHP_EOL.PHP_EOL.'===='.PHP_EOL;
     }
 }

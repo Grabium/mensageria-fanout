@@ -43,6 +43,7 @@ return [
                     'vhost' => env('RABBITMQ_VHOST', '/'),
                 ],
             ],
+            'queue' => 'register',
         ],
 
         'sync' => [

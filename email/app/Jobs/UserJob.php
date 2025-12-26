@@ -22,6 +22,6 @@ class UserJob implements ShouldQueue
      */
     public function handle(): void
     {
-        echo 'Usuário ' . $this->data['name'] . ' será notificado por email.'. PHP_EOL;
+        echo PHP_EOL.'===='.PHP_EOL.PHP_EOL.'Usuário ' . $this->data['name'] . ' será notificado por email.'.PHP_EOL.PHP_EOL.'===='.PHP_EOL;
     }
 }

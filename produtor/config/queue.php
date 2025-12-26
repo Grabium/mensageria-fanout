@@ -43,6 +43,13 @@ return [
                     'vhost' => env('RABBITMQ_VHOST', '/'),
                 ],
             ],
+            'options' => [
+                'queue' => [
+                    'exchange' => 'user',
+                    'exchange_type' => 'fanout',
+                    //'exchange_routing_key' => '',
+                ],
+            ],
         ],
 
         'sync' => [

@@ -26,9 +26,13 @@ class NewUser extends Command
      */
     public function handle()
     {
-        UserJob::dispatch([
-            'action' => 'CRIAR',
-            'name'   => fake()->name
-        ]);
+        $limit = 4;
+        
+        for($i=1;$i<=$limit;$i++){
+            UserJob::dispatch([
+                'action' => 'CRIAR',
+                'name'   => fake()->name
+            ]);
+        }
     }
 }
